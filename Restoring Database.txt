@@ -1,0 +1,33 @@
+Step by Step how to restore Postgres database 
+
+1. Ensure you have:
+
+PostgreSQL installed and running
+
+A PostgreSQL user (e.g., admin) with the appropriate privileges
+
+if not then Follow the Following steps 
+
+linux machines
+
+in terminal write 
+
+1. sudo -i -u Postgres
+2. create user admin with password 'your_password'';
+3. create database healthcare_db;
+4. grant all priviledges on database healthcare_db to admin;
+
+
+Readme Instructions Begin 
+
+
+5. now come to your code editor and do  code setup mentioned in readme file 
+
+run in your project directory terminal
+
+
+
+6. psql -U admin -d healthcare_db -h 127.0.0.1 < healthcare_db_dump.sql
+
+
+
